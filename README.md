@@ -18,7 +18,7 @@ Luego ejecuta el siguiente comando en la ruta raiz del proyecto
 npm install
 ```
 
-En el archivo main.js inserta la ruta de la carpeta que contiene lo archivos pdf
+En el archivo main.js inserta la ruta de la carpeta que contiene lo archivos pdf. <br>
 Añade el / al final de la ruta como en este ejemplo
 
 ```
