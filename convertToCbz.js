@@ -1,6 +1,7 @@
 import fs from "fs";
 
-export function convertToCbz(pdfPath) {
+export async function convertToCbz(pdfPath) {
+  console.log("procesando cbz");
   const files = fs.readdirSync(pdfPath);
   files.forEach(async (file) => {
     try {
