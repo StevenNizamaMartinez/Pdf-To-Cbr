@@ -18,6 +18,8 @@ async function convertFiles() {
       console.log("finish convert to image: ", fileName);
       console.log("Converting to zip: ", fileName);
       await generateRar(pdfPath);
+      //Delete folder
+      fs.rmdirSync(dirPath, { recursive: true });
     } else {
       console.error("Not a pdf file");
     }

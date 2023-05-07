@@ -1,4 +1,5 @@
 # Pdf-To-Cbr
+Un pequeño proyecto que convierte archivos pdf a un formato cbz para leer comics o mangas
 
 ## Getting Started
 Instrucciones básicas para usar el proyecto
@@ -27,7 +28,7 @@ const pdfPath = "C:/Users/nizama/Escritorio/Manga/";
 Inicia el proyecto con el comando 
 
 ```
-npm run dev
+node main.js
 ```
 
 ## Visita mi portafolio 
