@@ -19,7 +19,7 @@ npm install
 ```
 
 En el archivo main.js inserta la ruta de la carpeta que contiene lo archivos pdf. <br>
-Añade el / al final de la ruta como en este ejemplo
+Añade el "/" al final de la ruta como en este ejemplo
 
 ```
 const pdfPath = "C:/Users/nizama/Escritorio/Manga/";
