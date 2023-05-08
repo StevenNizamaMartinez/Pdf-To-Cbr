@@ -4,7 +4,7 @@ import { generateRar } from "./rar.js";
 import { convertToCbz } from "./convertToCbz.js";
 import { converPdf } from "./convertPdf.js";
 
-const pdfPath = "C:/Users/nizam/Escritorio/Manga/";
+const pdfPath = "C:/Users/nizam/Escritorio/Mangas/";
 
 async function convertFiles() {
   const files = fs.readdirSync(pdfPath);
@@ -19,7 +19,7 @@ async function convertFiles() {
       console.log("Converting to zip: ", fileName);
       await generateRar(pdfPath);
       //Delete folder
-      fs.rmdirSync(dirPath, { recursive: true });
+      fs.rmSync(dirPath, { recursive: true });
     } else {
       console.error("Not a pdf file");
     }

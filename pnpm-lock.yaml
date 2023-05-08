@@ -4,9 +4,6 @@ dependencies:
   adm-zip:
     specifier: ^0.5.10
     version: 0.5.10
-  jszip:
-    specifier: ^3.10.1
-    version: 3.10.1
   pdf-img-convert:
     specifier: ^1.2.1
     version: 1.2.1
@@ -144,10 +141,6 @@ packages:
     resolution: {integrity: sha512-ty/fTekppD2fIwRvnZAVdeOiGd1c7YXEixbgJTNzqcxJWKQnjJ/V1bNEEE6hygpM3WjwHFUVK6HTjWSzV4a8sQ==}
     dev: false
 
-  /core-util-is@1.0.3:
-    resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
-    dev: false
-
   /debug@3.2.7(supports-color@5.5.0):
     resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
     peerDependencies:
@@ -279,10 +272,6 @@ packages:
     resolution: {integrity: sha512-Ius2VYcGNk7T90CppJqcIkS5ooHUZyIQK+ClZfMfMNFEF9VSE73Fq+906u/CWu92x4gzZMWOwfFYckPObzdEbA==}
     dev: true
 
-  /immediate@3.0.6:
-    resolution: {integrity: sha512-XXOFtyqDjNDAQxVfYxuF7g9Il/IbWmmlQg2MYKOH8ExIT1qg6xc4zyS3HaEEATgs1btfzxq15ciUiY7gjSXRGQ==}
-    dev: false
-
   /inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
     dependencies:
@@ -325,25 +314,6 @@ packages:
 
   /is-url@1.2.4:
     resolution: {integrity: sha512-ITvGim8FhRiYe4IQ5uHSkj7pVaPDrCTkNd3yq3cV7iZAcJdHTUMPMEHcqSOy9xZ9qFenQCvi+2wjH9a1nXqHww==}
-    dev: false
-
-  /isarray@1.0.0:
-    resolution: {integrity: sha512-VLghIWNM6ELQzo7zwmcg0NmTVyWKYjvIeM83yjp0wRDTmUnrM678fQbcKBo6n2CJEF0szoG//ytg+TKla89ALQ==}
-    dev: false
-
-  /jszip@3.10.1:
-    resolution: {integrity: sha512-xXDvecyTpGLrqFrvkrUSoxxfJI5AH7U8zxxtVclpsUtMCq4JQ290LY8AW5c7Ggnr/Y/oK+bQMbqK2qmtk3pN4g==}
-    dependencies:
-      lie: 3.3.0
-      pako: 1.0.11
-      readable-stream: 2.3.8
-      setimmediate: 1.0.5
-    dev: false
-
-  /lie@3.3.0:
-    resolution: {integrity: sha512-UaiMJzeWRlEujzAuw5LokY1L5ecNQYZKfmyZ9L7wDHb/p5etKaxXhohBcrw0EYby+G/NA52vRSN4N39dxHAIwQ==}
-    dependencies:
-      immediate: 3.0.6
     dev: false
 
   /lru-cache@6.0.0:
@@ -472,10 +442,6 @@ packages:
       wrappy: 1.0.2
     dev: false
 
-  /pako@1.0.11:
-    resolution: {integrity: sha512-4hLB8Py4zZce5s4yd9XzopqwVv/yGNhV1Bl8NTmCq1763HeK2+EwVTv+leGeL13Dnh2wfbqowVPXCIO0z4taYw==}
-    dev: false
-
   /path-is-absolute@1.0.1:
     resolution: {integrity: sha512-AVbw3UJ2e9bq64vSaS9Am0fje1Pa8pbGqTTsmXfaIiMpnr5DlDhfJOuLj9Sf95ZPVDAUerDfEk88MPmPe7UCQg==}
     engines: {node: '>=0.10.0'}
@@ -511,25 +477,9 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
-  /process-nextick-args@2.0.1:
-    resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
-    dev: false
-
   /pstree.remy@1.1.8:
     resolution: {integrity: sha512-77DZwxQmxKnu3aR542U+X8FypNzbfJ+C5XQDk3uWjWxn6151aIMGthWYRXTqT1E5oJvg+ljaa2OJi+VfvCOQ8w==}
     dev: true
-
-  /readable-stream@2.3.8:
-    resolution: {integrity: sha512-8p0AUk4XODgIewSi0l8Epjs+EVnWiK7NoDIEGU0HhE7+ZyY8D1IMY7odu5lRrFXGg71L15KG8QrPmum45RTtdA==}
-    dependencies:
-      core-util-is: 1.0.3
-      inherits: 2.0.4
-      isarray: 1.0.0
-      process-nextick-args: 2.0.1
-      safe-buffer: 5.1.2
-      string_decoder: 1.1.1
-      util-deprecate: 1.0.2
-    dev: false
 
   /readable-stream@3.6.2:
     resolution: {integrity: sha512-9u/sniCrY3D5WdsERHzHE4G2YCXqoG5FTHUiCC4SIbr6XcLZBY05ya9EKjYek9O5xOAwjGq+1JdGBAS7Q9ScoA==}
@@ -552,10 +502,6 @@ packages:
     hasBin: true
     dependencies:
       glob: 7.2.3
-    dev: false
-
-  /safe-buffer@5.1.2:
-    resolution: {integrity: sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==}
     dev: false
 
   /safe-buffer@5.2.1:
@@ -589,10 +535,6 @@ packages:
     resolution: {integrity: sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==}
     dev: false
 
-  /setimmediate@1.0.5:
-    resolution: {integrity: sha512-MATJdZp8sLqDl/68LfQmbP8zKPLQNV6BIZoIgrscFDQ+RsvK/BxeDQOgyxKKoh0y/8h3BqVFnCqQ/gd+reiIXA==}
-    dev: false
-
   /signal-exit@3.0.7:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==}
     dev: false
@@ -623,12 +565,6 @@ packages:
       emoji-regex: 8.0.0
       is-fullwidth-code-point: 3.0.0
       strip-ansi: 6.0.1
-    dev: false
-
-  /string_decoder@1.1.1:
-    resolution: {integrity: sha512-n/ShnvDi6FHbbVfviro+WojiFzv+s8MPMHBczVePfUpDJLwoLT0ht1l4YwBCbi8pJAveEEdnkHyPyTP/mzRfwg==}
-    dependencies:
-      safe-buffer: 5.1.2
     dev: false
 
   /string_decoder@1.3.0:
