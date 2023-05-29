@@ -1,6 +1,5 @@
 import fs from "fs";
 import { join } from "path";
-import { generateRar } from "./rar.js";
 import { convertToCbz } from "./convertToCbz.js";
 import { converPdf } from "./convertPdf.js";
 import AdmZip from "adm-zip";
