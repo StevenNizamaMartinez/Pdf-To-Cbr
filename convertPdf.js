@@ -8,6 +8,10 @@ export async function converPdf(filePath, dirPath) {
   }
   try {
     const pdfArray = await pdf2image.convert(filePath);
+    const files = fs.readdirSync(dirPath);
+    for (const file of files) {
+      fs.unlinkSync(`${dirPath}/${file}`);
+    }
     for (let i = 0; i < pdfArray.length; i++) {
       await fs.writeFileSync(`${dirPath}/${i}.jpg`, pdfArray[i]);
     }
