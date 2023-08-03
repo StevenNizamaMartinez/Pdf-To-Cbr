@@ -4,10 +4,11 @@ import { convertToCbz } from "./convertToCbz.js";
 import { converPdf } from "./convertPdf.js";
 import AdmZip from "adm-zip";
 
-const pdfPath = "C:/Users/nizam/Escritorio/manga/";
+const pdfPath = "/home/steven/Escritorio/Manga/";
 
 async function convertFiles() {
   const files = fs.readdirSync(pdfPath);
+  console.log("🚀 ~ file: main.js:11 ~ convertFiles ~ files:", files)
 
   for (const file of files) {
     if (file.endsWith(".pdf") || file.endsWith(".PDF")) {

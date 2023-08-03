@@ -4,7 +4,7 @@ import fs from "fs";
 export async function converPdf(filePath, dirPath) {
   console.log("procesando : ", dirPath);
   if (!fs.existsSync(dirPath)) {
-    await fs.mkdirSync(dirPath);
+    fs.mkdirSync(dirPath);
   }
   try {
     const pdfArray = await pdf2image.convert(filePath);
@@ -13,7 +13,7 @@ export async function converPdf(filePath, dirPath) {
       fs.unlinkSync(`${dirPath}/${file}`);
     }
     for (let i = 0; i < pdfArray.length; i++) {
-      await fs.writeFileSync(`${dirPath}/${i}.jpg`, pdfArray[i]);
+      fs.writeFileSync(`${dirPath}/${i}.jpg`, pdfArray[i]);
     }
     console.log("finalizado : ", dirPath);
   } catch (error) {
