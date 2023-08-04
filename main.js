@@ -4,7 +4,7 @@ import { convertToCbz } from "./convertToCbz.js";
 import { converPdf } from "./convertPdf.js";
 import AdmZip from "adm-zip";
 
-const pdfPath = "/home/steven/Escritorio/Manga/";
+const pdfPath = "C:/Users/nizam/OneDrive/Escritorio/Manga";
 
 async function convertFiles() {
   const files = fs.readdirSync(pdfPath);

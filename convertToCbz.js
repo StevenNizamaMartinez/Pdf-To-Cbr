@@ -6,8 +6,8 @@ export async function convertToCbz(pdfPath) {
   for (const file of files) {
     try {
       if (!file.endsWith(".zip")) continue;
-      const filePath = pdfPath + file;
-      const newFile = pdfPath + file.split(".")[0] + ".cbz";
+      const filePath = `${pdfPath}/${file}`;
+      const newFile = `${pdfPath}/${file.split(".")[0]}.cbz`;
       const fileExist = fs.existsSync(filePath);
       if (fileExist) {
         await fs.promises.rename(filePath, newFile);
